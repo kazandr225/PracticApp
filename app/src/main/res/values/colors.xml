@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="backcolor">#253334</color>
     <color name="grey">#BEC2C2</color>
+    <color name="bl">#253334</color>
+    <color name="profileBackColor">#253334</color>
 </resources>

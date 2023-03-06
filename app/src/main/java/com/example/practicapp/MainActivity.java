@@ -14,6 +14,8 @@ public class MainActivity implements Parcelable {
     public String image;
     public String description;
 
+    //id title position image
+
     public Integer getId() {
         return id;
     }
@@ -84,4 +86,6 @@ public class MainActivity implements Parcelable {
         dest.writeString(image);
         dest.writeString(description);
     }
+
+
 }

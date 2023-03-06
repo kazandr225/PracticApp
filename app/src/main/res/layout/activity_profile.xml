@@ -4,6 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/profileBackColor"
     tools:context=".Profile">
 
+    <TextView
+        android:id="@+id/tvExit"
+        android:layout_width="41dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="exit"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:onClick="tvExit_Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
