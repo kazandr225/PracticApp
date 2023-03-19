@@ -79,10 +79,11 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/alegreya_sans"
+        android:onClick="tvRegistration_Click"
         android:text="Еще нет аккаунта? Зарегистрируйтесь"
         android:textColor="@color/white"
         android:textSize="20dp"
-        android:onClick="tvRegistration_Click"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEnter" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEnter"
+        tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

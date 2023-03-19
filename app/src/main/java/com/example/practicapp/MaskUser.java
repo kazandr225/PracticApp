@@ -61,6 +61,4 @@ public class MaskUser implements Serializable {
 
 
 
-
-
 }
