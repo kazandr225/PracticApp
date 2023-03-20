@@ -71,11 +71,9 @@ public class AdapterQoutes extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         @SuppressLint("ViewHolder") View v = View.inflate(mContext,R.layout.item_qoutes,null);
         TextView title = v.findViewById(R.id.tvTitle);
-        ImageView Image = v.findViewById(R.id.Image);
         TextView description = v.findViewById(R.id.tvDescription);
         MaskQuotes maskQuote = maskList.get(position);
         title.setText(maskQuote.getTitle());
-        new DownloadImageTask((ImageView) Image).execute(maskQuote.getImage());
         description.setText(maskQuote.getDescription());
         return v;
     }

@@ -30,11 +30,11 @@
         android:layout_height="46dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/alegreya_sans"
-        android:text="Пароль"
-        android:textColor="@color/grey"
         android:backgroundTint="@color/grey"
+        android:fontFamily="@font/alegreya_sans"
+        android:textColor="@color/grey"
         android:textSize="18dp"
+        android:hint="Пароль"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edEmail"
         tools:ignore="TouchTargetSizeCheck" />
@@ -46,14 +46,13 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="208dp"
         android:backgroundTint="@color/grey"
+        android:hint="Email"
         android:fontFamily="@font/alegreya_sans"
-        android:text="Email"
         android:textColor="@color/grey"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck"
-        tools:text="Email" />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/tvRegister"
@@ -77,6 +76,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/alegreya_sans"
+        android:background="@drawable/buttons"
         android:onClick="btnSingIn_Click"
         android:text="Sing in"
         android:textColor="@color/white"
@@ -90,6 +90,7 @@
         android:layout_height="61dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="44dp"
+        android:background="@drawable/buttons"
         android:fontFamily="@font/alegreya_sans"
         android:text="Профиль"
         android:textColor="@color/white"

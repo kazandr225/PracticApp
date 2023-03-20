@@ -31,7 +31,6 @@ public class Profile extends AppCompatActivity {
 
     ImageView image;
     TextView name;
-    /*OutputStream outputStream;*/
 
     public void onClickMain(View v)
     {
@@ -62,40 +61,4 @@ public class Profile extends AppCompatActivity {
         name = findViewById(R.id.textView2);
         name.setText(Onboarding.name);
     }
-
-    /*ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
-                    Bitmap bitmap = null;
-                    if (result.getResultCode() == Activity.RESULT_OK) {
-                        Uri selectedImage = result.getData().getData();
-                        try
-                        {
-                            bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), selectedImage);
-                        }
-                        catch (IOException e)
-                        {
-                            e.printStackTrace();
-                        }
-                        File filepath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-                        File dir = new File(filepath.getAbsolutePath() + "/MyFiles/");
-                        dir.mkdirs();
-                        File file = new File(dir, System.currentTimeMillis() + ".jpg");
-                        try {
-                            outputStream = new FileOutputStream(file);
-                            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream);
-                            outputStream.flush();
-                            outputStream.close();
-                            Toast.makeText(Profile.this, "Успешно", Toast.LENGTH_LONG).show();
-                        }
-                        catch (Exception e)
-                        {
-                            e.printStackTrace();
-                            Toast.makeText(Profile.this, "Ошибка", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                }
-            });*/
 }
