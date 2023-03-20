@@ -14,7 +14,7 @@
       android:layout_marginStart="108dp"
       android:layout_marginTop="324dp"
       android:fontFamily="@font/alegreya"
-      android:text="TextView"
+      android:text="Тут будет регистрация"
       android:textColor="@color/white"
       android:textSize="30dp"
       app:layout_constraintStart_toStartOf="parent"

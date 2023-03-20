@@ -15,7 +15,7 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="344dp"
         android:fontFamily="@font/alegreya"
-        android:text="TextView"
+        android:text="Тут будет меню"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"

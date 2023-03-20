@@ -14,7 +14,7 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="316dp"
         android:fontFamily="@font/alegreya"
-        android:text="TextView"
+        android:text="Тут будет прослушивание"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"

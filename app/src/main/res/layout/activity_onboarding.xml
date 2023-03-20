@@ -8,24 +8,11 @@
     tools:context=".Onboarding">
 
     <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="400dp"
-        android:text="ПРИВЕТ"
-        android:textColor="@color/white"
-        android:textSize="34dp"
-        android:fontFamily="@font/alegreya"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/alegreya_sans"
         android:text="Наслаждайся отборочными."
         android:textColor="@color/white"
@@ -34,24 +21,11 @@
         app:layout_constraintTop_toBottomOf="@+id/tv1" />
 
     <TextView
-        android:id="@+id/tv3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/alegreya_sans"
-        android:text="Будь внимателен."
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv2" />
-
-    <TextView
         android:id="@+id/tv4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/alegreya_sans"
         android:text="Делай хорошо."
         android:textColor="@color/white"
@@ -59,15 +33,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv3" />
 
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="@font/alegreya"
+        android:text="ПРИВЕТ"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btnEnter"
-        android:layout_width="376dp"
+        android:layout_width="340dp"
         android:layout_height="62dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/alegreya"
-        android:text="Войти в аккаунт"
         android:onClick="btnEnter_Click"
+        android:text="Войти в аккаунт"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv4" />
@@ -76,7 +63,7 @@
         android:id="@+id/tvRegistration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/alegreya_sans"
         android:onClick="tvRegistration_Click"
@@ -86,4 +73,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEnter"
         tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="Будь внимателен."
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

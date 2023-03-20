@@ -50,22 +50,7 @@ public class Login extends AppCompatActivity {
             Toast.makeText(Login.this, "Не все поля были заполнены", Toast.LENGTH_SHORT).show();
         }
 
-        else
-        {
-            Pattern p = Pattern.compile("@", Pattern.CASE_INSENSITIVE);
-            Matcher m = p.matcher(Email.getText().toString());
-            boolean b = m.find();
-            if(b)
-            {
-                getLogin();
-            }
-            else
-            {
-                Toast.makeText(Login.this, "Поле для с почтой должно содержать символ '@'", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, MainPage.class));
     }
 
     public void tvRegister_Click(View v) {startActivity(new Intent(this, Registration.class));}
@@ -94,7 +79,7 @@ public class Login extends AppCompatActivity {
                     {
                         SharedPreferences prefs = getSharedPreferences( "Date", Context.MODE_PRIVATE);
                         prefs.edit().putString("Email", "" + email).apply();
-                        prefs.edit().putString("image", "" + response.body().getAvatar()).apply();
+                        /*prefs.edit().putString("image", "" + response.body().getAvatar()).apply();*/
                         prefs.edit().putString("Name", "" + response.body().getNickName()).apply();
                         Onboarding.image = response.body().getAvatar();
                         Onboarding.name = response.body().getNickName();

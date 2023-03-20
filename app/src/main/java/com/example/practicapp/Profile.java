@@ -31,7 +31,7 @@ public class Profile extends AppCompatActivity {
 
     ImageView image;
     TextView name;
-    OutputStream outputStream;
+    /*OutputStream outputStream;*/
 
     public void onClickMain(View v)
     {
@@ -47,18 +47,11 @@ public class Profile extends AppCompatActivity {
 
     public void onClickLogin(View v)
     {
-        SharedPreferences prefs = getSharedPreferences( "Date", Context.MODE_PRIVATE);
-        prefs.edit().putString("Avatar", "").apply();
-        prefs.edit().putString("NickName", "").apply();
+        SharedPreferences sahrpr = getSharedPreferences( "Date", Context.MODE_PRIVATE);
+        sahrpr.edit().putString("Avatar", "").apply();
+        sahrpr.edit().putString("NickName", "").apply();
 
         startActivity(new Intent(this, Login.class));
-    }
-
-    public void addImage(View view)
-    {
-        Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
-        photoPickerIntent.setType("image/*");
-        someActivityResultLauncher.launch(photoPickerIntent);
     }
 
     @Override
@@ -68,10 +61,9 @@ public class Profile extends AppCompatActivity {
         image = findViewById(R.id.profile_img);
         name = findViewById(R.id.textView2);
         name.setText(Onboarding.name);
-        new AdapterQoutes.DownloadImageTask((ImageView) image).execute(Onboarding.image);
     }
 
-    ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
+    /*ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -105,5 +97,5 @@ public class Profile extends AppCompatActivity {
                         }
                     }
                 }
-            });
+            });*/
 }
